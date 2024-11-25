@@ -1,0 +1,121 @@
+@import url(reset.css);
+:root{
+    /* primary */
+    --lightGreen: hsl(148, 38%, 91%);
+    --mediumGreen:hsl(169, 82%, 27%);
+    --customRed:hsl(0, 66%, 54%);
+    /* neutral */
+    --White:  hsl(0, 0%, 100%);
+    --MediumGrey:hsl(186, 15%, 59%);
+    --darkGrey: hsl(187, 24%, 22%);
+}
+
+body{
+    background: var(--MediumGrey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130vh;
+}
+
+.container{
+    background: var(--White);
+    width: 95%;
+    height: 97%;
+    border-radius: 12px;
+}
+
+h1{
+    margin-left: 20px;
+    color:hsl(187, 24%, 22%);
+}
+
+.firstname{
+    margin-left: 20px;
+}
+
+.firstnameinput{
+    margin-left: 20px; 
+}
+
+.lastname{
+    margin-left: 20px;
+}
+
+.lastnameinput{
+    margin-left: 20px;
+}
+
+.emaillabel{
+    margin-left: 20px; 
+}
+
+.emailinput{
+    margin-left: 20px; 
+}
+
+h5{
+    margin-left: 20px;
+color: hsl(186, 15%, 59%);
+}
+
+.queryinput{
+    margin-left: 20px;
+}
+
+.message{
+    border: 2px solid hsl(187, 24%, 22%);
+    height: 250px;
+    width: 250px;
+    margin-left: 25px;
+    border-radius: 15px;
+}
+
+.iinput{
+    margin-left: 20px;
+}
+
+.checkbox{
+    margin-right: 10px;
+}
+
+/* ----/Submit form----/ */
+.submitform{
+    text-decoration: none;
+    border: 2px solid hsl(169, 82%, 27%);
+    height: 50px;
+    width: 250px;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+border-radius: 10px;
+margin-left: 20px;
+}
+
+@media (min-width: 600px) {
+   .container{
+    height:700px;
+    width: 800px ;
+   }
+   .firstandlast{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+.emailinput{
+    width: 600px;
+}
+.message{
+    width: 600px;
+    height: 120px;
+}
+.iinput{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submitform{
+    width: 600px;
+}
+  }
